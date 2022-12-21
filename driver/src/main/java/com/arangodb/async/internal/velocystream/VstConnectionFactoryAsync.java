@@ -20,10 +20,10 @@
 
 package com.arangodb.async.internal.velocystream;
 
-import com.arangodb.internal.net.Connection;
-import com.arangodb.internal.net.ConnectionFactory;
-import com.arangodb.internal.net.HostDescription;
-import com.arangodb.internal.velocystream.internal.MessageStore;
+import com.arangodb.protocol.internal.net.Connection;
+import com.arangodb.protocol.internal.net.ConnectionFactory;
+import com.arangodb.protocol.internal.net.HostDescription;
+import com.arangodb.protocol.vst.internal.MessageStore;
 
 import javax.net.ssl.SSLContext;
 

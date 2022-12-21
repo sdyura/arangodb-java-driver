@@ -21,7 +21,9 @@
 package com.arangodb.internal;
 
 import com.arangodb.QueueTimeMetrics;
-import com.arangodb.internal.serde.InternalSerde;
+import com.arangodb.protocol.internal.InternalRequest;
+import com.arangodb.protocol.internal.InternalResponse;
+import com.arangodb.serde.InternalSerde;
 
 import java.lang.reflect.Type;
 

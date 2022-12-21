@@ -1,5 +1,6 @@
 package com.arangodb.internal.serde;
 
+import com.arangodb.serde.InternalSerde;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.JsonSerializer;

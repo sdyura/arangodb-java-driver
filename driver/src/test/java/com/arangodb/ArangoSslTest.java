@@ -21,6 +21,7 @@
 package com.arangodb;
 
 import com.arangodb.entity.ArangoDBVersion;
+import com.arangodb.protocol.Protocol;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.condition.EnabledIfSystemProperty;
 import org.junit.jupiter.params.ParameterizedTest;

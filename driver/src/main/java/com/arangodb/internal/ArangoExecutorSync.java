@@ -22,9 +22,11 @@ package com.arangodb.internal;
 
 import com.arangodb.ArangoDBException;
 import com.arangodb.entity.MetaAware;
-import com.arangodb.internal.net.CommunicationProtocol;
-import com.arangodb.internal.net.HostHandle;
-import com.arangodb.internal.serde.InternalSerde;
+import com.arangodb.protocol.internal.InternalRequest;
+import com.arangodb.protocol.internal.InternalResponse;
+import com.arangodb.protocol.internal.net.CommunicationProtocol;
+import com.arangodb.protocol.internal.net.HostHandle;
+import com.arangodb.serde.InternalSerde;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

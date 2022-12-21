@@ -22,7 +22,9 @@ package com.arangodb.internal;
 
 import com.arangodb.ArangoSerdeAccessor;
 import com.arangodb.DbName;
-import com.arangodb.internal.serde.InternalSerde;
+import com.arangodb.protocol.internal.InternalRequest;
+import com.arangodb.protocol.internal.RequestType;
+import com.arangodb.serde.InternalSerde;
 import com.arangodb.internal.util.EncodeUtils;
 
 /**

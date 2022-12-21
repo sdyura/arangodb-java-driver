@@ -4,7 +4,7 @@ import ch.qos.logback.classic.Level;
 import com.arangodb.ArangoDB;
 import com.arangodb.ArangoDBException;
 import com.arangodb.ArangoDBMultipleException;
-import com.arangodb.Protocol;
+import com.arangodb.protocol.Protocol;
 import io.vertx.core.http.HttpClosedException;
 import org.junit.jupiter.params.provider.EnumSource;
 import resilience.SingleServerTest;

@@ -1,7 +1,7 @@
 package com.arangodb.internal.serde;
 
-import com.arangodb.ContentType;
-import com.arangodb.Protocol;
+import com.arangodb.serde.ContentType;
+import com.arangodb.protocol.Protocol;
 
 public final class ContentTypeFactory {
     private ContentTypeFactory() {

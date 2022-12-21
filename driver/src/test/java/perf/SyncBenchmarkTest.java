@@ -2,7 +2,7 @@ package perf;
 
 import com.arangodb.ArangoDB;
 import com.arangodb.DbName;
-import com.arangodb.Protocol;
+import com.arangodb.protocol.Protocol;
 import com.arangodb.Request;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;

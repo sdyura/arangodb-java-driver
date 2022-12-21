@@ -8,7 +8,7 @@ import com.arangodb.entity.arangosearch.CollectionLink;
 import com.arangodb.entity.arangosearch.FieldLink;
 import com.arangodb.util.RawBytes;
 import com.arangodb.util.RawJson;
-import com.arangodb.internal.InternalResponse;
+import com.arangodb.protocol.internal.InternalResponse;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.TreeNode;

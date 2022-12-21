@@ -1,6 +1,7 @@
 package com.arangodb;
 
 import com.arangodb.internal.config.FileConfigPropertiesProvider;
+import com.arangodb.protocol.Protocol;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

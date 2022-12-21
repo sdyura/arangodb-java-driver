@@ -20,7 +20,7 @@
 
 package com.arangodb.internal;
 
-import com.arangodb.Protocol;
+import com.arangodb.protocol.Protocol;
 import com.arangodb.entity.LoadBalancingStrategy;
 
 /**

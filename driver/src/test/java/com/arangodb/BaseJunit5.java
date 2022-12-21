@@ -4,6 +4,7 @@ import com.arangodb.entity.*;
 import com.arangodb.internal.config.FileConfigPropertiesProvider;
 import com.arangodb.model.CollectionCreateOptions;
 import com.arangodb.model.GraphCreateOptions;
+import com.arangodb.protocol.Protocol;
 import com.arangodb.util.TestUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;

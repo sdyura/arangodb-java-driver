@@ -2,7 +2,7 @@ package resilience.vstKeepAlive;
 
 import ch.qos.logback.classic.Level;
 import com.arangodb.ArangoDB;
-import com.arangodb.Protocol;
+import com.arangodb.protocol.Protocol;
 import resilience.SingleServerTest;
 import eu.rekawek.toxiproxy.model.ToxicDirection;
 import eu.rekawek.toxiproxy.model.toxic.Latency;

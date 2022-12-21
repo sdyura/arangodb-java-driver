@@ -20,7 +20,7 @@
 
 package com.arangodb.internal.util;
 
-import com.arangodb.internal.net.*;
+import com.arangodb.protocol.internal.net.*;
 
 /**
  * @author Mark Vollmary

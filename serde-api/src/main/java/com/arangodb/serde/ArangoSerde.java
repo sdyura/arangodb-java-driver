@@ -1,7 +1,5 @@
 package com.arangodb.serde;
 
-import com.arangodb.ContentType;
-
 /**
  * Contract for serialization/deserialization of user data.
  * Implementations of this interface could be used for customizing serialization/deserialization of user related data

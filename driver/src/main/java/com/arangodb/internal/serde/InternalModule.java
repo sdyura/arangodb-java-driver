@@ -4,12 +4,12 @@ import com.arangodb.entity.CollectionStatus;
 import com.arangodb.entity.CollectionType;
 import com.arangodb.entity.InvertedIndexPrimarySort;
 import com.arangodb.entity.ReplicationFactor;
-import com.arangodb.internal.velocystream.internal.AuthenticationRequest;
-import com.arangodb.internal.velocystream.internal.JwtAuthenticationRequest;
+import com.arangodb.protocol.vst.internal.AuthenticationRequest;
+import com.arangodb.protocol.vst.internal.JwtAuthenticationRequest;
 import com.arangodb.util.RawBytes;
 import com.arangodb.util.RawJson;
-import com.arangodb.internal.InternalRequest;
-import com.arangodb.internal.InternalResponse;
+import com.arangodb.protocol.internal.InternalRequest;
+import com.arangodb.protocol.internal.InternalResponse;
 import com.fasterxml.jackson.databind.Module;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 

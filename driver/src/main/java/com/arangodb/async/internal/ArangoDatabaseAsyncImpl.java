@@ -29,13 +29,13 @@ import com.arangodb.internal.ArangoCursorExecute;
 import com.arangodb.internal.ArangoErrors;
 import com.arangodb.internal.InternalArangoDatabase;
 import com.arangodb.internal.cursor.entity.InternalCursorEntity;
-import com.arangodb.internal.net.HostHandle;
+import com.arangodb.protocol.internal.net.HostHandle;
 import com.arangodb.internal.util.DocumentUtil;
 import com.arangodb.model.*;
 import com.arangodb.model.arangosearch.AnalyzerDeleteOptions;
 import com.arangodb.model.arangosearch.ArangoSearchCreateOptions;
 import com.arangodb.model.arangosearch.SearchAliasCreateOptions;
-import com.arangodb.internal.InternalRequest;
+import com.arangodb.protocol.internal.InternalRequest;
 
 import java.util.Collection;
 import java.util.Collections;

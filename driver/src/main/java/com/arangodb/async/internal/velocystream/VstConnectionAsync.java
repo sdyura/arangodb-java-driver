@@ -21,11 +21,11 @@
 package com.arangodb.async.internal.velocystream;
 
 import com.arangodb.async.internal.utils.CompletableFutureUtils;
-import com.arangodb.internal.net.HostDescription;
-import com.arangodb.internal.velocystream.internal.Chunk;
-import com.arangodb.internal.velocystream.internal.Message;
-import com.arangodb.internal.velocystream.internal.MessageStore;
-import com.arangodb.internal.velocystream.internal.VstConnection;
+import com.arangodb.protocol.internal.net.HostDescription;
+import com.arangodb.protocol.vst.internal.Chunk;
+import com.arangodb.protocol.vst.internal.Message;
+import com.arangodb.protocol.vst.internal.MessageStore;
+import com.arangodb.protocol.vst.internal.VstConnection;
 
 import javax.net.ssl.SSLContext;
 import java.util.Collection;

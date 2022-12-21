@@ -15,4 +15,11 @@
         <moduleName>com.arangodb.serde</moduleName>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 </project>

@@ -20,9 +20,9 @@
 
 package com.arangodb.internal.util;
 
-import com.arangodb.internal.net.AccessType;
-import com.arangodb.internal.InternalRequest;
-import com.arangodb.internal.RequestType;
+import com.arangodb.protocol.internal.net.AccessType;
+import com.arangodb.protocol.internal.InternalRequest;
+import com.arangodb.protocol.internal.RequestType;
 
 /**
  * @author Mark Vollmary

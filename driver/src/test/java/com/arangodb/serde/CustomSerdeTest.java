@@ -23,8 +23,8 @@ package com.arangodb.serde;
 
 import com.arangodb.*;
 import com.arangodb.internal.config.FileConfigPropertiesProvider;
-import com.arangodb.internal.serde.InternalSerde;
 import com.arangodb.model.DocumentCreateOptions;
+import com.arangodb.protocol.Protocol;
 import com.arangodb.serde.jackson.JacksonSerde;
 import com.arangodb.serde.jackson.JacksonSerdeProvider;
 import com.fasterxml.jackson.core.JsonGenerator;

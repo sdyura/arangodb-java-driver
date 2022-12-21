@@ -1,9 +1,11 @@
 package com.arangodb.internal.serde;
 
 import com.arangodb.ArangoDBException;
+import com.arangodb.serde.ContentType;
 import com.arangodb.entity.BaseDocument;
 import com.arangodb.entity.BaseEdgeDocument;
 import com.arangodb.serde.ArangoSerde;
+import com.arangodb.serde.InternalSerde;
 import com.arangodb.util.RawBytes;
 import com.arangodb.util.RawJson;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -20,16 +22,26 @@ import java.util.stream.Collectors;
 
 import static com.arangodb.internal.serde.SerdeUtils.checkSupportedJacksonVersion;
 
-final class InternalSerdeImpl implements InternalSerde {
+public final class InternalSerdeImpl implements InternalSerde {
 
     static {
         checkSupportedJacksonVersion();
     }
 
+    /**
+     * Creates a new InternalSerde with default settings for the specified data type.
+     *
+     * @param contentType serialization target data type
+     * @return the created InternalSerde
+     */
+    public static InternalSerde of(final ContentType contentType, ArangoSerde userSerde) {
+        return new InternalSerdeImpl(InternalMapperProvider.of(contentType), userSerde);
+    }
+
     private final ArangoSerde userSerde;
     private final ObjectMapper mapper;
 
-    InternalSerdeImpl(final ObjectMapper mapper, final ArangoSerde userSerde) {
+    private InternalSerdeImpl(final ObjectMapper mapper, final ArangoSerde userSerde) {
         this.mapper = mapper;
         this.userSerde = userSerde;
         mapper.deactivateDefaultTyping();

@@ -2,7 +2,7 @@ package resilience.http;
 
 import com.arangodb.ArangoDB;
 import com.arangodb.ArangoDBException;
-import com.arangodb.Protocol;
+import com.arangodb.protocol.Protocol;
 import resilience.SingleServerTest;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

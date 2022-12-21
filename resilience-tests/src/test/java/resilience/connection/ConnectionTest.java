@@ -3,7 +3,7 @@ package resilience.connection;
 import com.arangodb.ArangoDB;
 import com.arangodb.ArangoDBException;
 import com.arangodb.ArangoDBMultipleException;
-import com.arangodb.Protocol;
+import com.arangodb.protocol.Protocol;
 import resilience.SingleServerTest;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;

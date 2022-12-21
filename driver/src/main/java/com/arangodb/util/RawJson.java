@@ -1,6 +1,6 @@
 package com.arangodb.util;
 
-import com.arangodb.internal.serde.InternalSerde;
+import com.arangodb.serde.InternalSerde;
 
 import java.util.Objects;
 

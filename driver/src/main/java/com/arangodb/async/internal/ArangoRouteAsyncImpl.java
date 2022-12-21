@@ -22,8 +22,8 @@ package com.arangodb.async.internal;
 
 import com.arangodb.async.ArangoRouteAsync;
 import com.arangodb.internal.InternalArangoRoute;
-import com.arangodb.internal.RequestType;
-import com.arangodb.internal.InternalResponse;
+import com.arangodb.protocol.internal.RequestType;
+import com.arangodb.protocol.internal.InternalResponse;
 
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;

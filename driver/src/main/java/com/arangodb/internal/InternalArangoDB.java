@@ -28,7 +28,9 @@ import com.arangodb.entity.Permissions;
 import com.arangodb.entity.ServerRole;
 import com.arangodb.entity.UserEntity;
 import com.arangodb.internal.ArangoExecutor.ResponseDeserializer;
-import com.arangodb.internal.serde.InternalSerde;
+import com.arangodb.protocol.internal.InternalRequest;
+import com.arangodb.protocol.internal.RequestType;
+import com.arangodb.serde.InternalSerde;
 import com.arangodb.model.*;
 
 import java.util.ArrayList;
@@ -161,7 +163,7 @@ public abstract class InternalArangoDB<E extends ArangoExecutor> extends ArangoE
     }
 
     protected InternalRequest executeRequest(final Request<?> request) {
-        InternalRequest ireq = new InternalRequest(request.getDb(), RequestType.from(request.getMethod()), request.getPath());
+        InternalRequest ireq = new InternalRequest(request.getDb(), convertMethodToRequestType(request.getMethod()), request.getPath());
         ireq.putHeaderParams(request.getHeaders());
         ireq.putQueryParams(request.getQueryParams());
         ireq.setBody(serde.serializeUserData(request.getBody()));
@@ -199,6 +201,27 @@ public abstract class InternalArangoDB<E extends ArangoExecutor> extends ArangoE
 
     protected InternalRequest getQueryOptimizerRulesRequest() {
         return request(DbName.SYSTEM, RequestType.GET, PATH_API_QUERY_RULES);
+    }
+
+    private static RequestType convertMethodToRequestType(final Request.Method method) {
+        switch (method) {
+            case DELETE:
+                return RequestType.DELETE;
+            case GET:
+                return RequestType.GET;
+            case POST:
+                return RequestType.POST;
+            case PUT:
+                return RequestType.PUT;
+            case HEAD:
+                return RequestType.HEAD;
+            case PATCH:
+                return RequestType.PATCH;
+            case OPTIONS:
+                return RequestType.OPTIONS;
+            default:
+                throw new IllegalArgumentException();
+        }
     }
 
 }

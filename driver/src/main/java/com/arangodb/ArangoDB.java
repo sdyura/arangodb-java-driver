@@ -26,16 +26,18 @@ import com.arangodb.entity.*;
 import com.arangodb.internal.ArangoDBImpl;
 import com.arangodb.internal.ArangoDefaults;
 import com.arangodb.internal.InternalArangoDBBuilder;
-import com.arangodb.internal.http.HttpCommunication;
-import com.arangodb.internal.http.HttpConnectionFactory;
-import com.arangodb.internal.net.ConnectionFactory;
-import com.arangodb.internal.net.Host;
-import com.arangodb.internal.net.HostHandler;
-import com.arangodb.internal.net.HostResolver;
+import com.arangodb.internal.serde.InternalSerdeImpl;
+import com.arangodb.protocol.Protocol;
+import com.arangodb.protocol.http.HttpCommunication;
+import com.arangodb.protocol.http.HttpConnectionFactory;
+import com.arangodb.protocol.internal.net.ConnectionFactory;
+import com.arangodb.protocol.internal.net.Host;
+import com.arangodb.protocol.internal.net.HostHandler;
+import com.arangodb.protocol.internal.net.HostResolver;
 import com.arangodb.internal.serde.ContentTypeFactory;
-import com.arangodb.internal.serde.InternalSerde;
-import com.arangodb.internal.velocystream.VstCommunicationSync;
-import com.arangodb.internal.velocystream.VstConnectionFactorySync;
+import com.arangodb.serde.InternalSerde;
+import com.arangodb.protocol.vst.VstCommunicationSync;
+import com.arangodb.protocol.vst.VstConnectionFactorySync;
 import com.arangodb.model.DBCreateOptions;
 import com.arangodb.model.LogOptions;
 import com.arangodb.model.UserCreateOptions;
@@ -587,7 +589,7 @@ public interface ArangoDB extends ArangoSerdeAccessor {
 
             final ArangoSerde userSerde = this.userDataSerde != null ? this.userDataSerde :
                     serdeProvider().of(ContentTypeFactory.of(protocol));
-            final InternalSerde serde = InternalSerde.of(ContentTypeFactory.of(protocol), userSerde);
+            final InternalSerde serde = InternalSerdeImpl.of(ContentTypeFactory.of(protocol), userSerde);
 
             int protocolMaxConnections;
             switch (protocol) {

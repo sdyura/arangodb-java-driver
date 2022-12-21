@@ -21,20 +21,20 @@
 package com.arangodb.async.internal.velocystream;
 
 import com.arangodb.ArangoDBException;
-import com.arangodb.internal.net.ArangoDBRedirectException;
-import com.arangodb.internal.net.HostDescription;
-import com.arangodb.internal.net.HostHandle;
-import com.arangodb.internal.net.HostHandler;
-import com.arangodb.internal.serde.InternalSerde;
+import com.arangodb.protocol.internal.net.ArangoDBRedirectException;
+import com.arangodb.protocol.internal.net.HostDescription;
+import com.arangodb.protocol.internal.net.HostHandle;
+import com.arangodb.protocol.internal.net.HostHandler;
+import com.arangodb.serde.InternalSerde;
 import com.arangodb.internal.util.HostUtils;
-import com.arangodb.internal.velocystream.VstCommunication;
-import com.arangodb.internal.velocystream.internal.AuthenticationRequest;
-import com.arangodb.internal.velocystream.internal.JwtAuthenticationRequest;
-import com.arangodb.internal.velocystream.internal.Message;
+import com.arangodb.protocol.vst.VstCommunication;
+import com.arangodb.protocol.vst.internal.AuthenticationRequest;
+import com.arangodb.protocol.vst.internal.JwtAuthenticationRequest;
+import com.arangodb.protocol.vst.internal.Message;
 import com.arangodb.velocypack.exception.VPackException;
 import com.arangodb.velocypack.exception.VPackParserException;
-import com.arangodb.internal.InternalRequest;
-import com.arangodb.internal.InternalResponse;
+import com.arangodb.protocol.internal.InternalRequest;
+import com.arangodb.protocol.internal.InternalResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

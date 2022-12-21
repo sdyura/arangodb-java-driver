@@ -27,6 +27,8 @@ import com.arangodb.internal.ArangoExecutor.ResponseDeserializer;
 import com.arangodb.internal.util.RequestUtils;
 import com.arangodb.model.*;
 import com.arangodb.model.arangosearch.*;
+import com.arangodb.protocol.internal.InternalRequest;
+import com.arangodb.protocol.internal.RequestType;
 
 import java.util.Collection;
 import java.util.Map;

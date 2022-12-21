@@ -1,7 +1,5 @@
 package com.arangodb.serde;
 
-import com.arangodb.ContentType;
-
 public interface ArangoSerdeProvider {
 
     /**

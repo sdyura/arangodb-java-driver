@@ -20,6 +20,9 @@
 
 package com.arangodb.internal;
 
+import com.arangodb.protocol.internal.InternalRequest;
+import com.arangodb.protocol.internal.RequestType;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;

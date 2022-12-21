@@ -23,7 +23,7 @@ package com.arangodb.example.ssl;
 import com.arangodb.ArangoDB;
 import com.arangodb.ArangoDBException;
 import com.arangodb.ArangoDBMultipleException;
-import com.arangodb.Protocol;
+import com.arangodb.protocol.Protocol;
 import com.arangodb.entity.ArangoDBVersion;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.condition.EnabledIfSystemProperty;

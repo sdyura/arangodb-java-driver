@@ -23,9 +23,9 @@ package com.arangodb.internal.util;
 import com.arangodb.ArangoDBException;
 import com.arangodb.entity.ErrorEntity;
 import com.arangodb.internal.ArangoErrors;
-import com.arangodb.internal.net.ArangoDBRedirectException;
-import com.arangodb.internal.serde.InternalSerde;
-import com.arangodb.internal.InternalResponse;
+import com.arangodb.protocol.internal.net.ArangoDBRedirectException;
+import com.arangodb.serde.InternalSerde;
+import com.arangodb.protocol.internal.InternalResponse;
 
 import java.util.concurrent.TimeoutException;
 

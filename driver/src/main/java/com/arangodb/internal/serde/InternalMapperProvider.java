@@ -1,6 +1,6 @@
 package com.arangodb.internal.serde;
 
-import com.arangodb.ContentType;
+import com.arangodb.serde.ContentType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.function.Supplier;

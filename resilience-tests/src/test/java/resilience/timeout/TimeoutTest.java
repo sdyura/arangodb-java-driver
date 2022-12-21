@@ -3,7 +3,7 @@ package resilience.timeout;
 import com.arangodb.ArangoCollection;
 import com.arangodb.ArangoDB;
 import com.arangodb.ArangoDBException;
-import com.arangodb.Protocol;
+import com.arangodb.protocol.Protocol;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 import resilience.SingleServerTest;

@@ -27,7 +27,7 @@ import com.arangodb.async.ArangoDBAsync;
 import com.arangodb.async.ArangoDatabaseAsync;
 import com.arangodb.internal.config.FileConfigPropertiesProvider;
 import com.arangodb.model.DocumentCreateOptions;
-import com.arangodb.ContentType;
+import com.arangodb.serde.ContentType;
 import com.arangodb.serde.jackson.JacksonSerde;
 import com.arangodb.serde.jackson.JacksonSerdeProvider;
 import org.junit.jupiter.api.AfterEach;

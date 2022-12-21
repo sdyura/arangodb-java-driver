@@ -1,7 +1,6 @@
 package com.arangodb.serde;
 
-import com.arangodb.ContentType;
-import com.arangodb.internal.serde.InternalSerde;
+import com.arangodb.internal.serde.InternalSerdeImpl;
 import com.arangodb.internal.serde.SerdeUtils;
 import com.arangodb.util.RawBytes;
 import com.arangodb.util.RawJson;
@@ -18,7 +17,7 @@ class SerdeTest {
     @ParameterizedTest
     @EnumSource(ContentType.class)
     void rawJsonSerde(ContentType type) {
-        InternalSerde s = InternalSerde.of(type, null);
+        InternalSerde s = InternalSerdeImpl.of(type, null);
         ObjectNode node = JsonNodeFactory.instance.objectNode().put("foo", "bar");
         RawJson raw = RawJson.of(SerdeUtils.INSTANCE.writeJson(node));
         byte[] serialized = s.serialize(raw);
@@ -29,7 +28,7 @@ class SerdeTest {
     @ParameterizedTest
     @EnumSource(ContentType.class)
     void rawBytesSerde(ContentType type) {
-        InternalSerde s = InternalSerde.of(type, null);
+        InternalSerde s = InternalSerdeImpl.of(type, null);
         ObjectNode node = JsonNodeFactory.instance.objectNode().put("foo", "bar");
         RawBytes raw = RawBytes.of(s.serialize(node));
         byte[] serialized = s.serialize(raw);

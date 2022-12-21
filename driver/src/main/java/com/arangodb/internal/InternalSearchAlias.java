@@ -21,6 +21,8 @@
 package com.arangodb.internal;
 
 import com.arangodb.model.arangosearch.SearchAliasPropertiesOptions;
+import com.arangodb.protocol.internal.InternalRequest;
+import com.arangodb.protocol.internal.RequestType;
 
 public class InternalSearchAlias<A extends InternalArangoDB<E>, D extends InternalArangoDatabase<A, E>, E extends ArangoExecutor>
         extends InternalArangoView<A, D, E> {

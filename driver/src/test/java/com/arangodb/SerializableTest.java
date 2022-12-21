@@ -1,7 +1,7 @@
 package com.arangodb;
 
 import com.arangodb.entity.ErrorEntity;
-import com.arangodb.internal.net.ArangoDBRedirectException;
+import com.arangodb.protocol.internal.net.ArangoDBRedirectException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;

@@ -20,7 +20,7 @@
 
 package com.arangodb;
 
-import com.arangodb.internal.serde.InternalSerde;
+import com.arangodb.serde.InternalSerde;
 
 import javax.annotation.concurrent.ThreadSafe;
 

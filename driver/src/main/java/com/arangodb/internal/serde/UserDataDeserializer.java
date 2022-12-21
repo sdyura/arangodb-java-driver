@@ -1,5 +1,6 @@
 package com.arangodb.internal.serde;
 
+import com.arangodb.serde.InternalSerde;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.BeanProperty;
 import com.fasterxml.jackson.databind.DeserializationContext;
