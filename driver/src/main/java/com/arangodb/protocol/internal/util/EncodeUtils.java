@@ -18,9 +18,9 @@
  * Copyright holder is ArangoDB GmbH, Cologne, Germany
  */
 
-package com.arangodb.internal.util;
+package com.arangodb.protocol.internal.util;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

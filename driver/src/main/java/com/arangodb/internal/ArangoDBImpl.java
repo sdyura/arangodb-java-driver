@@ -22,6 +22,7 @@ package com.arangodb.internal;
 
 import com.arangodb.*;
 import com.arangodb.entity.*;
+import com.arangodb.protocol.internal.ArangoExecutorSync;
 import com.arangodb.protocol.Protocol;
 import com.arangodb.protocol.http.HttpCommunication;
 import com.arangodb.protocol.http.HttpProtocol;

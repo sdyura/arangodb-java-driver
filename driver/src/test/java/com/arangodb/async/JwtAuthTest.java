@@ -1,6 +1,7 @@
 package com.arangodb.async;
 
 import com.arangodb.*;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.internal.config.FileConfigPropertiesProvider;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;

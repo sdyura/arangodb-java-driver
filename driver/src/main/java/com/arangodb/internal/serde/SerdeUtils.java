@@ -1,6 +1,6 @@
 package com.arangodb.internal.serde;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.JsonNode;

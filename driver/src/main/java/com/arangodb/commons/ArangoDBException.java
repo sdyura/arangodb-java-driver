@@ -18,9 +18,7 @@
  * Copyright holder is ArangoDB GmbH, Cologne, Germany
  */
 
-package com.arangodb;
-
-import com.arangodb.entity.ErrorEntity;
+package com.arangodb.commons;
 
 /**
  * @author Mark Vollmary

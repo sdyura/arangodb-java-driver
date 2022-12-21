@@ -21,10 +21,12 @@
 package com.arangodb.internal;
 
 import com.arangodb.ArangoCollection;
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
+import com.arangodb.commons.ArangoErrors;
 import com.arangodb.entity.*;
 import com.arangodb.internal.util.DocumentUtil;
 import com.arangodb.model.*;
+import com.arangodb.protocol.internal.ArangoExecutorSync;
 import com.arangodb.util.RawData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

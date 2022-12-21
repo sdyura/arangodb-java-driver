@@ -45,7 +45,7 @@ public class QueueTimeMetricsImpl implements QueueTimeMetrics {
         return samples.getAvg();
     }
 
-    void add(double value) {
+    public void add(double value) {
         add(new QueueTimeSample(System.currentTimeMillis(), value));
     }
 

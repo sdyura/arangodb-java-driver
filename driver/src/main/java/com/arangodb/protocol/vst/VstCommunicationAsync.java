@@ -18,16 +18,15 @@
  * Copyright holder is ArangoDB GmbH, Cologne, Germany
  */
 
-package com.arangodb.async.internal.velocystream;
+package com.arangodb.protocol.vst;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.protocol.internal.net.ArangoDBRedirectException;
 import com.arangodb.protocol.internal.net.HostDescription;
 import com.arangodb.protocol.internal.net.HostHandle;
 import com.arangodb.protocol.internal.net.HostHandler;
 import com.arangodb.serde.InternalSerde;
-import com.arangodb.internal.util.HostUtils;
-import com.arangodb.protocol.vst.VstCommunication;
+import com.arangodb.protocol.internal.HostUtils;
 import com.arangodb.protocol.vst.internal.AuthenticationRequest;
 import com.arangodb.protocol.vst.internal.JwtAuthenticationRequest;
 import com.arangodb.protocol.vst.internal.Message;

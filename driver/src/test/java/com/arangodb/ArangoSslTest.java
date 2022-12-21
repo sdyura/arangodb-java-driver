@@ -20,6 +20,8 @@
 
 package com.arangodb;
 
+import com.arangodb.commons.ArangoDBException;
+import com.arangodb.commons.ArangoDBMultipleException;
 import com.arangodb.entity.ArangoDBVersion;
 import com.arangodb.protocol.Protocol;
 import org.junit.jupiter.api.Tag;

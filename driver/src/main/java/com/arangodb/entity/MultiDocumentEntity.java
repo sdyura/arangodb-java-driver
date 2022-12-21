@@ -20,6 +20,8 @@
 
 package com.arangodb.entity;
 
+import com.arangodb.commons.ErrorEntity;
+
 import java.util.Collection;
 
 /**

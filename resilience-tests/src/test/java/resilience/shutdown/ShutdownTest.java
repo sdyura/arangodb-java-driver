@@ -1,7 +1,7 @@
 package resilience.shutdown;
 
 import com.arangodb.ArangoDB;
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.protocol.Protocol;
 import io.vertx.core.http.HttpClosedException;
 import org.junit.jupiter.params.ParameterizedTest;

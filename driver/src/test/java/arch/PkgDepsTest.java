@@ -12,21 +12,28 @@ import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
 public class PkgDepsTest {
 
     @ArchTest
-    public static final ArchRule httpPkg = noClasses().that()
-            .resideInAPackage("com.arangodb.protocol.http..")
+    public static final ArchRule commonsPkg = noClasses().that()
+            .resideInAPackage("com.arangodb.commons..")
             .should().dependOnClassesThat()
-            .resideOutsideOfPackages("com.arangodb.protocol..", "com.arangodb.serde..", "java..", "io.vertx..", "io.netty..", "javax..", "org.slf4j..");
+            .resideOutsideOfPackages(
+                    "com.arangodb.commons..",
+                    "java..",
+                    "javax..",
+                    "org.slf4j..");
 
     @ArchTest
-    public static final ArchRule vstCrossPkg = noClasses().that()
-            .resideInAPackage("com.arangodb.protocol.vst..")
+    public static final ArchRule protocolPkg = noClasses().that()
+            .resideInAPackage("com.arangodb.protocol..")
             .should().dependOnClassesThat()
-            .resideInAPackage("com.arangodb.protocol.http..");
-
-    @ArchTest
-    public static final ArchRule httpCrossPkg = noClasses().that()
-            .resideInAPackage("com.arangodb.protocol.http..")
-            .should().dependOnClassesThat()
-            .resideInAPackage("com.arangodb.protocol.vst..");
+            .resideOutsideOfPackages(
+                    "com.arangodb.protocol..",
+                    "com.arangodb.serde..",
+                    "com.arangodb.commons..",
+                    "com.arangodb.velocypack..",
+                    "java..",
+                    "io.vertx..",
+                    "io.netty..",
+                    "javax..",
+                    "org.slf4j..");
 
 }

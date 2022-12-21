@@ -22,10 +22,11 @@ package com.arangodb.internal;
 
 import com.arangodb.ArangoSerdeAccessor;
 import com.arangodb.DbName;
+import com.arangodb.protocol.internal.ArangoExecutor;
 import com.arangodb.protocol.internal.InternalRequest;
 import com.arangodb.protocol.internal.RequestType;
+import com.arangodb.protocol.internal.util.EncodeUtils;
 import com.arangodb.serde.InternalSerde;
-import com.arangodb.internal.util.EncodeUtils;
 
 /**
  * @author Mark Vollmary
@@ -70,7 +71,7 @@ public abstract class ArangoExecuteable<E extends ArangoExecutor> implements Ara
     }
 
     protected InternalRequest request(final DbName dbName, final RequestType requestType, final String... path) {
-        return new InternalRequest(dbName, requestType, createPath(path));
+        return new InternalRequest(dbName == null ? null : dbName.get(), requestType, createPath(path));
     }
 
 }

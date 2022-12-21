@@ -20,12 +20,14 @@
 
 package com.arangodb.internal;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.SearchAlias;
+import com.arangodb.commons.ArangoErrors;
 import com.arangodb.entity.ViewEntity;
 import com.arangodb.entity.arangosearch.SearchAliasPropertiesEntity;
 import com.arangodb.model.arangosearch.SearchAliasCreateOptions;
 import com.arangodb.model.arangosearch.SearchAliasPropertiesOptions;
+import com.arangodb.protocol.internal.ArangoExecutorSync;
 
 /**
  * @author Michele Rastelli

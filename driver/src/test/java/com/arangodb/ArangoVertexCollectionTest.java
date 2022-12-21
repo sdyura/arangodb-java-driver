@@ -20,6 +20,7 @@
 
 package com.arangodb;
 
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.entity.BaseDocument;
 import com.arangodb.entity.VertexEntity;
 import com.arangodb.entity.VertexUpdateEntity;

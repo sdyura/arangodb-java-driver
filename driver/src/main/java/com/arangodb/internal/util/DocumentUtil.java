@@ -20,7 +20,7 @@
 
 package com.arangodb.internal.util;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 
 import java.util.regex.Pattern;
 

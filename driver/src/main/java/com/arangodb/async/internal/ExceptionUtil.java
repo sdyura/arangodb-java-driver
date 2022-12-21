@@ -20,7 +20,7 @@
 
 package com.arangodb.async.internal;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 
 import java.util.concurrent.CompletionException;
 import java.util.function.Function;

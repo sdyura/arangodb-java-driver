@@ -1,4 +1,4 @@
-package com.arangodb.async.internal.utils;
+package com.arangodb.commons;
 
 import java.util.concurrent.*;
 

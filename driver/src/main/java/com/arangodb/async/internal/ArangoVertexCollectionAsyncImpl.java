@@ -25,6 +25,7 @@ import com.arangodb.entity.VertexEntity;
 import com.arangodb.entity.VertexUpdateEntity;
 import com.arangodb.internal.InternalArangoVertexCollection;
 import com.arangodb.model.*;
+import com.arangodb.protocol.internal.ArangoExecutorAsync;
 
 import java.util.concurrent.CompletableFuture;
 

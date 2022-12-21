@@ -20,7 +20,7 @@
 
 package com.arangodb.protocol.internal.net;
 
-import com.arangodb.internal.ArangoExecutorSync;
+import com.arangodb.protocol.internal.ArangoExecutorSync;
 import com.arangodb.serde.InternalSerde;
 
 /**

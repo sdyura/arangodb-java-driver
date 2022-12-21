@@ -1,6 +1,6 @@
 package com.arangodb.internal.config;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.config.ConfigPropertiesProvider;
 
 import java.io.InputStream;

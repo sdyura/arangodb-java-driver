@@ -20,6 +20,7 @@
 
 package com.arangodb;
 
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.entity.*;
 import com.arangodb.entity.AqlExecutionExplainEntity.ExecutionPlan;
 import com.arangodb.entity.QueryCachePropertiesEntity.CacheMode;

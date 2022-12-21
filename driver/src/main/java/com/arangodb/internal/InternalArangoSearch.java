@@ -21,6 +21,7 @@
 package com.arangodb.internal;
 
 import com.arangodb.model.arangosearch.ArangoSearchPropertiesOptions;
+import com.arangodb.protocol.internal.ArangoExecutor;
 import com.arangodb.protocol.internal.InternalRequest;
 import com.arangodb.protocol.internal.RequestType;
 

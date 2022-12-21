@@ -20,12 +20,14 @@
 
 package com.arangodb.internal;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.DbName;
+import com.arangodb.commons.ErrorEntity;
 import com.arangodb.entity.*;
-import com.arangodb.internal.ArangoExecutor.ResponseDeserializer;
+import com.arangodb.protocol.internal.ArangoExecutor;
+import com.arangodb.protocol.internal.ArangoExecutor.ResponseDeserializer;
 import com.arangodb.internal.util.DocumentUtil;
-import com.arangodb.internal.util.RequestUtils;
+import com.arangodb.protocol.internal.RequestUtils;
 import com.arangodb.model.*;
 import com.arangodb.protocol.internal.InternalRequest;
 import com.arangodb.protocol.internal.RequestType;

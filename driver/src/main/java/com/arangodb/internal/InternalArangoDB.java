@@ -27,7 +27,8 @@ import com.arangodb.entity.LogLevelEntity;
 import com.arangodb.entity.Permissions;
 import com.arangodb.entity.ServerRole;
 import com.arangodb.entity.UserEntity;
-import com.arangodb.internal.ArangoExecutor.ResponseDeserializer;
+import com.arangodb.protocol.internal.ArangoExecutor;
+import com.arangodb.protocol.internal.ArangoExecutor.ResponseDeserializer;
 import com.arangodb.protocol.internal.InternalRequest;
 import com.arangodb.protocol.internal.RequestType;
 import com.arangodb.serde.InternalSerde;
@@ -163,7 +164,8 @@ public abstract class InternalArangoDB<E extends ArangoExecutor> extends ArangoE
     }
 
     protected InternalRequest executeRequest(final Request<?> request) {
-        InternalRequest ireq = new InternalRequest(request.getDb(), convertMethodToRequestType(request.getMethod()), request.getPath());
+        DbName dbName = request.getDb();
+        InternalRequest ireq = new InternalRequest(dbName == null ? null : dbName.get(), convertMethodToRequestType(request.getMethod()), request.getPath());
         ireq.putHeaderParams(request.getHeaders());
         ireq.putQueryParams(request.getQueryParams());
         ireq.setBody(serde.serializeUserData(request.getBody()));

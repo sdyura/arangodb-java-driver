@@ -20,8 +20,9 @@
 
 package com.arangodb.internal;
 
-import com.arangodb.ArangoDBException;
-import com.arangodb.ArangoDBMultipleException;
+import com.arangodb.commons.ArangoDBException;
+import com.arangodb.commons.ArangoDBMultipleException;
+import com.arangodb.protocol.internal.ArangoExecutorSync;
 import com.arangodb.serde.InternalSerde;
 import com.arangodb.protocol.internal.net.*;
 import org.junit.jupiter.api.Test;

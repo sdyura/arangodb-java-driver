@@ -20,15 +20,16 @@
 
 package com.arangodb.async.internal;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.DbName;
 import com.arangodb.async.*;
 import com.arangodb.entity.*;
 import com.arangodb.entity.arangosearch.analyzer.SearchAnalyzer;
 import com.arangodb.internal.ArangoCursorExecute;
-import com.arangodb.internal.ArangoErrors;
+import com.arangodb.commons.ArangoErrors;
 import com.arangodb.internal.InternalArangoDatabase;
 import com.arangodb.internal.cursor.entity.InternalCursorEntity;
+import com.arangodb.protocol.internal.ArangoExecutorAsync;
 import com.arangodb.protocol.internal.net.HostHandle;
 import com.arangodb.internal.util.DocumentUtil;
 import com.arangodb.model.*;

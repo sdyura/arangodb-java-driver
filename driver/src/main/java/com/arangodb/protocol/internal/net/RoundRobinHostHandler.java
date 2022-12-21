@@ -20,8 +20,8 @@
 
 package com.arangodb.protocol.internal.net;
 
-import com.arangodb.ArangoDBException;
-import com.arangodb.ArangoDBMultipleException;
+import com.arangodb.commons.ArangoDBException;
+import com.arangodb.commons.ArangoDBMultipleException;
 
 import java.util.ArrayList;
 import java.util.List;

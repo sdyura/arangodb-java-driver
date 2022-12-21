@@ -21,7 +21,7 @@
 package com.arangodb.example.graph;
 
 import com.arangodb.ArangoDB;
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.ArangoDatabase;
 import com.arangodb.DbName;
 import com.arangodb.entity.EdgeDefinition;

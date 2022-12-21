@@ -25,6 +25,7 @@ import com.arangodb.entity.*;
 import com.arangodb.internal.InternalArangoCollection;
 import com.arangodb.internal.util.DocumentUtil;
 import com.arangodb.model.*;
+import com.arangodb.protocol.internal.ArangoExecutorAsync;
 import com.arangodb.util.RawData;
 
 import java.util.Collection;

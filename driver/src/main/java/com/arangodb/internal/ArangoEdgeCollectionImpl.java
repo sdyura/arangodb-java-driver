@@ -20,11 +20,12 @@
 
 package com.arangodb.internal;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.ArangoEdgeCollection;
 import com.arangodb.entity.EdgeEntity;
 import com.arangodb.entity.EdgeUpdateEntity;
 import com.arangodb.model.*;
+import com.arangodb.protocol.internal.ArangoExecutorSync;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

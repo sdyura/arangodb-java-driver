@@ -1,4 +1,4 @@
-package com.arangodb.internal.serde;
+package com.arangodb.protocol.internal;
 
 import com.arangodb.serde.ContentType;
 import com.arangodb.protocol.Protocol;

@@ -21,7 +21,7 @@
 package com.arangodb.example.graph;
 
 import com.arangodb.ArangoCursor;
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collection;

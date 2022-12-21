@@ -20,7 +20,7 @@
 
 package com.arangodb.protocol.vst.internal;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

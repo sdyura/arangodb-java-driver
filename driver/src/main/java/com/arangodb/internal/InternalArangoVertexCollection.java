@@ -22,9 +22,10 @@ package com.arangodb.internal;
 
 import com.arangodb.entity.VertexEntity;
 import com.arangodb.entity.VertexUpdateEntity;
-import com.arangodb.internal.ArangoExecutor.ResponseDeserializer;
+import com.arangodb.protocol.internal.ArangoExecutor;
+import com.arangodb.protocol.internal.ArangoExecutor.ResponseDeserializer;
 import com.arangodb.internal.util.DocumentUtil;
-import com.arangodb.internal.util.RequestUtils;
+import com.arangodb.protocol.internal.RequestUtils;
 import com.arangodb.model.*;
 import com.arangodb.protocol.internal.InternalRequest;
 import com.arangodb.protocol.internal.RequestType;

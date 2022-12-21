@@ -18,14 +18,13 @@
  * Copyright holder is ArangoDB GmbH, Cologne, Germany
  */
 
-package com.arangodb.internal.util;
+package com.arangodb.protocol.internal;
 
-import com.arangodb.ArangoDBException;
-import com.arangodb.entity.ErrorEntity;
-import com.arangodb.internal.ArangoErrors;
+import com.arangodb.commons.ArangoDBException;
+import com.arangodb.commons.ErrorEntity;
+import com.arangodb.commons.ArangoErrors;
 import com.arangodb.protocol.internal.net.ArangoDBRedirectException;
 import com.arangodb.serde.InternalSerde;
-import com.arangodb.protocol.internal.InternalResponse;
 
 import java.util.concurrent.TimeoutException;
 

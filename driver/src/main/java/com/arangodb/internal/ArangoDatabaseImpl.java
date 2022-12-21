@@ -21,10 +21,13 @@
 package com.arangodb.internal;
 
 import com.arangodb.*;
+import com.arangodb.commons.ArangoDBException;
+import com.arangodb.commons.ArangoErrors;
 import com.arangodb.entity.*;
 import com.arangodb.entity.arangosearch.analyzer.SearchAnalyzer;
 import com.arangodb.internal.cursor.ArangoCursorImpl;
 import com.arangodb.internal.cursor.entity.InternalCursorEntity;
+import com.arangodb.protocol.internal.ArangoExecutorSync;
 import com.arangodb.protocol.internal.InternalRequest;
 import com.arangodb.protocol.internal.net.HostHandle;
 import com.arangodb.internal.util.DocumentUtil;

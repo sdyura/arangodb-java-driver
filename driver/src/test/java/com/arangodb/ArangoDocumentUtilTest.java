@@ -20,6 +20,7 @@
 
 package com.arangodb;
 
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.internal.util.DocumentUtil;
 import org.junit.jupiter.api.Test;
 

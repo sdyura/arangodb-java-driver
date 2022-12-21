@@ -26,6 +26,7 @@ import com.arangodb.entity.arangosearch.ArangoSearchPropertiesEntity;
 import com.arangodb.internal.InternalArangoSearch;
 import com.arangodb.model.arangosearch.ArangoSearchCreateOptions;
 import com.arangodb.model.arangosearch.ArangoSearchPropertiesOptions;
+import com.arangodb.protocol.internal.ArangoExecutorAsync;
 
 import java.util.Objects;
 import java.util.concurrent.CompletableFuture;

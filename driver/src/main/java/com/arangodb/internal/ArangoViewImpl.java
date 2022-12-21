@@ -20,9 +20,11 @@
 
 package com.arangodb.internal;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.ArangoView;
+import com.arangodb.commons.ArangoErrors;
 import com.arangodb.entity.ViewEntity;
+import com.arangodb.protocol.internal.ArangoExecutorSync;
 
 /**
  * @author Mark Vollmary

@@ -20,13 +20,13 @@
 
 package com.arangodb.protocol.http;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.protocol.internal.InternalRequest;
 import com.arangodb.protocol.internal.RequestType;
 import com.arangodb.protocol.internal.InternalResponse;
 import com.arangodb.serde.InternalSerde;
-import com.arangodb.internal.util.HostUtils;
-import com.arangodb.internal.util.RequestUtils;
+import com.arangodb.protocol.internal.HostUtils;
+import com.arangodb.protocol.internal.RequestUtils;
 import com.arangodb.protocol.internal.net.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

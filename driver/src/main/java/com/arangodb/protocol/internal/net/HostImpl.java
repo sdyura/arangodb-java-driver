@@ -20,7 +20,7 @@
 
 package com.arangodb.protocol.internal.net;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 
 import java.io.IOException;
 

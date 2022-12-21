@@ -21,13 +21,14 @@
 package com.arangodb.protocol.http;
 
 import com.arangodb.*;
+import com.arangodb.commons.ArangoDBException;
+import com.arangodb.protocol.internal.ContentTypeFactory;
 import com.arangodb.protocol.internal.net.Connection;
 import com.arangodb.protocol.internal.net.HostDescription;
-import com.arangodb.internal.serde.ContentTypeFactory;
+import com.arangodb.protocol.internal.util.EncodeUtils;
 import com.arangodb.serde.ContentType;
 import com.arangodb.serde.InternalSerde;
-import com.arangodb.internal.util.EncodeUtils;
-import com.arangodb.internal.util.ResponseUtils;
+import com.arangodb.protocol.internal.ResponseUtils;
 import com.arangodb.protocol.internal.InternalRequest;
 import com.arangodb.protocol.internal.RequestType;
 import com.arangodb.protocol.internal.InternalResponse;
@@ -170,9 +171,9 @@ public class HttpConnection implements Connection {
 
     private static String buildUrl(final InternalRequest request) {
         StringBuilder sb = new StringBuilder();
-        DbName dbName = request.getDbName();
-        if (dbName != null && !dbName.get().isEmpty()) {
-            sb.append("/_db/").append(dbName.getEncoded());
+        String dbName = request.getDbName();
+        if (dbName != null && !dbName.isEmpty()) {
+            sb.append("/_db/").append(EncodeUtils.encodeURIComponent(dbName));
         }
         sb.append(request.getPath());
         if (!request.getQueryParam().isEmpty()) {

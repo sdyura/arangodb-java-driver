@@ -22,8 +22,9 @@ package com.arangodb.async;
 
 import com.arangodb.*;
 import com.arangodb.async.internal.ArangoDBAsyncImpl;
-import com.arangodb.async.internal.velocystream.VstCommunicationAsync;
-import com.arangodb.async.internal.velocystream.VstConnectionFactoryAsync;
+import com.arangodb.commons.ArangoDBException;
+import com.arangodb.protocol.vst.VstCommunicationAsync;
+import com.arangodb.protocol.vst.VstConnectionFactoryAsync;
 import com.arangodb.config.ConfigPropertiesProvider;
 import com.arangodb.entity.*;
 import com.arangodb.internal.ArangoDefaults;

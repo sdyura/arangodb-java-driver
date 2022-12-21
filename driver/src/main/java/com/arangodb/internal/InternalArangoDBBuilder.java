@@ -20,11 +20,11 @@
 
 package com.arangodb.internal;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.config.ConfigPropertiesProvider;
 import com.arangodb.config.ConfigPropertyKey;
 import com.arangodb.entity.LoadBalancingStrategy;
-import com.arangodb.internal.util.HostUtils;
+import com.arangodb.protocol.internal.HostUtils;
 import com.arangodb.protocol.internal.net.*;
 import com.arangodb.serde.ArangoSerde;
 import com.arangodb.serde.ArangoSerdeProvider;

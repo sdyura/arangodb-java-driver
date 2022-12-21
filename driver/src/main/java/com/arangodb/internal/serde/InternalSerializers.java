@@ -68,7 +68,7 @@ public final class InternalSerializers {
             gen.writeStartArray();
             gen.writeNumber(value.getVersion());
             gen.writeNumber(value.getType());
-            gen.writeString(value.getDbName().get());
+            gen.writeString(value.getDbName());
             gen.writeNumber(value.getRequestType().getType());
             gen.writeString(value.getPath());
             gen.writeStartObject();

@@ -22,6 +22,7 @@ package com.arangodb.async.internal;
 
 import com.arangodb.async.ArangoRouteAsync;
 import com.arangodb.internal.InternalArangoRoute;
+import com.arangodb.protocol.internal.ArangoExecutorAsync;
 import com.arangodb.protocol.internal.RequestType;
 import com.arangodb.protocol.internal.InternalResponse;
 

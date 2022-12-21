@@ -21,6 +21,7 @@
 package com.arangodb.async;
 
 import com.arangodb.*;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.entity.*;
 import com.arangodb.internal.config.FileConfigPropertiesProvider;
 import com.arangodb.internal.serde.SerdeUtils;

@@ -21,7 +21,7 @@
 package com.arangodb.async;
 
 
-import com.arangodb.async.internal.ArangoExecutorAsync;
+import com.arangodb.protocol.internal.ArangoExecutorAsync;
 import com.arangodb.entity.ArangoDBVersion;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;

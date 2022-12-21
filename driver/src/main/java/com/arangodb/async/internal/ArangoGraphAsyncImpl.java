@@ -28,6 +28,7 @@ import com.arangodb.entity.GraphEntity;
 import com.arangodb.internal.InternalArangoGraph;
 import com.arangodb.model.GraphCreateOptions;
 import com.arangodb.model.VertexCollectionCreateOptions;
+import com.arangodb.protocol.internal.ArangoExecutorAsync;
 
 import java.util.Collection;
 import java.util.Objects;

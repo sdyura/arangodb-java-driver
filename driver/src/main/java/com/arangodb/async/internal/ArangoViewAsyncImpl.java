@@ -23,6 +23,7 @@ package com.arangodb.async.internal;
 import com.arangodb.async.ArangoViewAsync;
 import com.arangodb.entity.ViewEntity;
 import com.arangodb.internal.InternalArangoView;
+import com.arangodb.protocol.internal.ArangoExecutorAsync;
 
 import java.util.Objects;
 import java.util.concurrent.CompletableFuture;

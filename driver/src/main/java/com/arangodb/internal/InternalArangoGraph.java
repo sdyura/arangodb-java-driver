@@ -22,7 +22,8 @@ package com.arangodb.internal;
 
 import com.arangodb.entity.EdgeDefinition;
 import com.arangodb.entity.GraphEntity;
-import com.arangodb.internal.ArangoExecutor.ResponseDeserializer;
+import com.arangodb.protocol.internal.ArangoExecutor;
+import com.arangodb.protocol.internal.ArangoExecutor.ResponseDeserializer;
 import com.arangodb.model.OptionsBuilder;
 import com.arangodb.model.VertexCollectionCreateOptions;
 import com.arangodb.protocol.internal.InternalRequest;

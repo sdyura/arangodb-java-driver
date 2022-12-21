@@ -20,7 +20,7 @@
 
 package com.arangodb.protocol.vst.internal;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.protocol.internal.net.HostDescription;
 
 import javax.net.ssl.SSLContext;

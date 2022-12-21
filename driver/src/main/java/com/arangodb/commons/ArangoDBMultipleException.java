@@ -1,4 +1,4 @@
-package com.arangodb;
+package com.arangodb.commons;
 
 import java.util.List;
 import java.util.Objects;

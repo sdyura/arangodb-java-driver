@@ -1,5 +1,6 @@
 package com.arangodb;
 
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.internal.config.FileConfigPropertiesProvider;
 import com.arangodb.protocol.Protocol;
 import org.junit.jupiter.api.BeforeAll;

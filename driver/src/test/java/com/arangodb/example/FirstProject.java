@@ -1,6 +1,7 @@
 package com.arangodb.example;
 
 import com.arangodb.*;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.entity.BaseDocument;
 import com.arangodb.entity.CollectionEntity;
 import com.fasterxml.jackson.databind.JsonNode;

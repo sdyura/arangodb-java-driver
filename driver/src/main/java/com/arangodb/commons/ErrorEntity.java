@@ -18,7 +18,7 @@
  * Copyright holder is ArangoDB GmbH, Cologne, Germany
  */
 
-package com.arangodb.entity;
+package com.arangodb.commons;
 
 import java.io.Serializable;
 

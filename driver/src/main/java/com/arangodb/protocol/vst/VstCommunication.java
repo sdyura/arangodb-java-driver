@@ -20,15 +20,15 @@
 
 package com.arangodb.protocol.vst;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.internal.ArangoDefaults;
 import com.arangodb.protocol.internal.net.AccessType;
 import com.arangodb.protocol.internal.net.Host;
 import com.arangodb.protocol.internal.net.HostHandle;
 import com.arangodb.protocol.internal.net.HostHandler;
 import com.arangodb.serde.InternalSerde;
-import com.arangodb.internal.util.RequestUtils;
-import com.arangodb.internal.util.ResponseUtils;
+import com.arangodb.protocol.internal.RequestUtils;
+import com.arangodb.protocol.internal.ResponseUtils;
 import com.arangodb.protocol.vst.internal.Chunk;
 import com.arangodb.protocol.vst.internal.Message;
 import com.arangodb.protocol.vst.internal.VstConnection;

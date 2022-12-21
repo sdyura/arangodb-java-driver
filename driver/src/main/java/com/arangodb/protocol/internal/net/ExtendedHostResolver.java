@@ -20,13 +20,12 @@
 
 package com.arangodb.protocol.internal.net;
 
-import com.arangodb.ArangoDBException;
-import com.arangodb.DbName;
-import com.arangodb.internal.ArangoExecutorSync;
-import com.arangodb.serde.InternalSerde;
-import com.arangodb.internal.util.HostUtils;
+import com.arangodb.commons.ArangoDBException;
+import com.arangodb.protocol.internal.ArangoExecutorSync;
+import com.arangodb.protocol.internal.HostUtils;
 import com.arangodb.protocol.internal.InternalRequest;
 import com.arangodb.protocol.internal.RequestType;
+import com.arangodb.serde.InternalSerde;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -120,7 +119,7 @@ public class ExtendedHostResolver implements HostResolver {
         try {
 
             response = executor.execute(
-                    new InternalRequest(DbName.SYSTEM, RequestType.GET, "/_api/cluster/endpoints"),
+                    new InternalRequest("_system", RequestType.GET, "/_api/cluster/endpoints"),
                     response1 -> {
                         final List<Map<String, String>> tmp = arangoSerialization.deserialize(response1.getBody(),
                                 "/endpoints",

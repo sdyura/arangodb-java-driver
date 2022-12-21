@@ -20,7 +20,7 @@
 
 package com.arangodb.protocol.vst.internal;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.internal.ArangoDefaults;
 import com.arangodb.protocol.internal.net.Connection;
 import com.arangodb.protocol.internal.net.HostDescription;

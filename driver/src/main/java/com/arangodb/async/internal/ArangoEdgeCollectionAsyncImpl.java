@@ -25,6 +25,7 @@ import com.arangodb.entity.EdgeEntity;
 import com.arangodb.entity.EdgeUpdateEntity;
 import com.arangodb.internal.InternalArangoEdgeCollection;
 import com.arangodb.model.*;
+import com.arangodb.protocol.internal.ArangoExecutorAsync;
 
 import java.util.concurrent.CompletableFuture;
 

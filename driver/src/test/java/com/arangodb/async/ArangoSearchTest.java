@@ -20,7 +20,7 @@
 
 package com.arangodb.async;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.entity.InvertedIndexField;
 import com.arangodb.entity.ViewEntity;
 import com.arangodb.entity.ViewType;

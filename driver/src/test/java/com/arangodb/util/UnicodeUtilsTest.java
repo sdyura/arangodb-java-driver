@@ -1,6 +1,6 @@
 package com.arangodb.util;
 
-import com.arangodb.internal.util.EncodeUtils;
+import com.arangodb.protocol.internal.util.EncodeUtils;
 import org.graalvm.home.Version;
 import org.graalvm.nativeimage.ImageInfo;
 import org.graalvm.polyglot.Context;

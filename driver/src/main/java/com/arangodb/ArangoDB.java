@@ -20,6 +20,7 @@
 
 package com.arangodb;
 
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.config.ConfigPropertiesProvider;
 import com.arangodb.config.ConfigPropertyKey;
 import com.arangodb.entity.*;
@@ -30,11 +31,11 @@ import com.arangodb.internal.serde.InternalSerdeImpl;
 import com.arangodb.protocol.Protocol;
 import com.arangodb.protocol.http.HttpCommunication;
 import com.arangodb.protocol.http.HttpConnectionFactory;
+import com.arangodb.protocol.internal.ContentTypeFactory;
 import com.arangodb.protocol.internal.net.ConnectionFactory;
 import com.arangodb.protocol.internal.net.Host;
 import com.arangodb.protocol.internal.net.HostHandler;
 import com.arangodb.protocol.internal.net.HostResolver;
-import com.arangodb.internal.serde.ContentTypeFactory;
 import com.arangodb.serde.InternalSerde;
 import com.arangodb.protocol.vst.VstCommunicationSync;
 import com.arangodb.protocol.vst.VstConnectionFactorySync;

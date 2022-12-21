@@ -20,14 +20,16 @@
 
 package com.arangodb.internal;
 
-import com.arangodb.ArangoDBException;
+import com.arangodb.commons.ArangoDBException;
 import com.arangodb.ArangoEdgeCollection;
 import com.arangodb.ArangoGraph;
 import com.arangodb.ArangoVertexCollection;
+import com.arangodb.commons.ArangoErrors;
 import com.arangodb.entity.EdgeDefinition;
 import com.arangodb.entity.GraphEntity;
 import com.arangodb.model.GraphCreateOptions;
 import com.arangodb.model.VertexCollectionCreateOptions;
+import com.arangodb.protocol.internal.ArangoExecutorSync;
 
 import java.util.Collection;
 

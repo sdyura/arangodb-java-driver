@@ -18,9 +18,10 @@
  * Copyright holder is ArangoDB GmbH, Cologne, Germany
  */
 
-package com.arangodb.internal;
+package com.arangodb.protocol.internal;
 
 import com.arangodb.QueueTimeMetrics;
+import com.arangodb.internal.QueueTimeMetricsImpl;
 import com.arangodb.protocol.internal.InternalRequest;
 import com.arangodb.protocol.internal.InternalResponse;
 import com.arangodb.serde.InternalSerde;
