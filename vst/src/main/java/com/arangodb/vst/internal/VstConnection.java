@@ -171,7 +171,7 @@ public abstract class VstConnection<T> implements Connection {
         }
         sendProtocolHeader();
 
-        Executors.newSingleThreadExecutor(new ThreadFactory() {
+        executor = Executors.newSingleThreadExecutor(new ThreadFactory() {
             @Override
             public Thread newThread(@NotNull Runnable r) {
                 Thread thread = new Thread(r);
