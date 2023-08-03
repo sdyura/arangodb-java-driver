@@ -171,7 +171,15 @@ public abstract class VstConnection<T> implements Connection {
         }
         sendProtocolHeader();
 
-        executor = Executors.newSingleThreadExecutor();
+        Executors.newSingleThreadExecutor(new ThreadFactory() {
+            @Override
+            public Thread newThread(@NotNull Runnable r) {
+                Thread thread = new Thread(r);
+                thread.setName("Arangodb-VstConnection");
+                return thread;
+            }
+        });
+
         executor.submit((Callable<Void>) () -> {
             LOGGER.debug("[" + connectionName + "]: Start Callable");
 
